@@ -41,7 +41,7 @@ h2.display{font-size:clamp(32px,4.4vw,52px)}h3{font-size:19px;font-weight:700;le
 .mnav .row{display:grid;gap:10px;margin-top:18px}
 @keyframes fade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 /* hero */
-.hero{background:radial-gradient(900px 420px at 15% 10%,rgba(1,186,237,.22),transparent 60%),radial-gradient(700px 380px at 85% 0%,rgba(1,88,250,.28),transparent 55%),linear-gradient(180deg,#dce9ff 0%,#eef4ff 42%,#f7f9fc 100%);margin-top:-72px;padding:140px 0 72px;overflow:hidden}
+.hero{background:radial-gradient(900px 420px at 15% 10%,rgba(1,186,237,.22),transparent 60%),radial-gradient(700px 380px at 85% 0%,rgba(1,88,250,.28),transparent 55%),linear-gradient(180deg,#dce9ff 0%,#eef4ff 42%,#f7f9fc 100%);margin-top:-72px;padding:140px 0 96px;overflow:visible}
 .hero-grid{display:grid;gap:56px;align-items:center}@media(min-width:1024px){.hero-grid{grid-template-columns:1.05fr 1fr;gap:40px}.hero{padding:168px 0 104px}}
 .hero h1{font-family:var(--display);font-weight:500;font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.03em;margin:18px 0 22px}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 8px;border-radius:999px;background:rgba(255,255,255,.7);border:1px solid rgba(1,88,250,.15);font-size:13px;font-weight:600}
@@ -67,16 +67,16 @@ h2.display{font-size:clamp(32px,4.4vw,52px)}h3{font-size:19px;font-weight:700;le
 .card .num{font-family:var(--mono);font-size:13px;color:var(--royal);letter-spacing:.1em;margin-bottom:28px;display:block}
 .card p{color:var(--muted);margin:0}
 .alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.feat{display:grid;gap:40px;align-items:center;padding:40px 0}@media(min-width:960px){.feat{grid-template-columns:1fr 1fr;gap:80px;padding:56px 0}.feat.flip .media{order:2}}
+.feat{display:grid;gap:40px;align-items:center;padding:48px 0}@media(min-width:960px){.feat{grid-template-columns:1fr 1fr;gap:72px;padding:64px 0;align-items:center}.feat.flip .media{order:2}}
 .feat h3{font-family:var(--display);font-weight:500;font-size:clamp(28px,3.2vw,40px);letter-spacing:-.02em;line-height:1.1;margin:12px 0 14px}
 .feat p{color:var(--muted);font-size:17px}
 .ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}.ticks li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
 .ticks li:before{content:"";flex:none;width:22px;height:22px;margin-top:1px;border-radius:50%;background:linear-gradient(135deg,#0158fa,#01baed) center/100%;-webkit-mask:radial-gradient(circle,#000 0 100%);box-shadow:inset 0 0 0 7px rgba(255,255,255,0)}
 .ticks li{position:relative}.ticks li:after{content:"";position:absolute;left:7px;top:6px;width:6px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
-.media{position:relative;border-radius:28px;padding:40px 24px;align-items:flex-start;background:radial-gradient(130% 95% at 50% -15%,#bfd4fb 0%,rgba(191,212,251,0) 60%),linear-gradient(180deg,#c2d5fb 0%,#d2dffc 42%,#e2ebfd 72%,#e9f1fe 100%);display:flex;justify-content:center;gap:16px;overflow:hidden;border:1px solid rgba(120,155,230,.3)}
-.media .phone{width:min(240px,46%);align-self:center}.media .phone+.phone{margin-top:40px}
-.media.wide{padding:32px}.media.wide img{border-radius:16px;box-shadow:0 30px 60px -30px rgba(1,20,52,.45)}
-.media.tablet{padding:36px 36px 0}.media.tablet img{width:min(400px,100%);border-radius:22px 22px 0 0;box-shadow:0 30px 60px -30px rgba(1,20,52,.45)}
+.media{position:relative;padding:8px 0;display:flex;justify-content:center;align-items:center;gap:18px;background:transparent;border:0;overflow:visible}
+.media .phone{width:min(280px,70%);max-width:300px;flex:none;height:auto}.media .phone+.phone{margin-top:28px;width:min(250px,60%)}
+.media.wide{padding:8px 0}.media.wide img{border-radius:16px;box-shadow:0 30px 60px -30px rgba(1,20,52,.45);width:100%;height:auto}
+.media.tablet{padding:8px 0}.media.tablet img{width:min(420px,100%);height:auto;border-radius:22px;box-shadow:0 30px 60px -30px rgba(1,20,52,.45)}
 /* access */
 .banner{background-color:#071940;background-image:linear-gradient(135deg,#153786 0%,#102e73 45%,#071940 100%);color:#fff;position:relative;overflow:hidden}
 .banner:before{content:"";position:absolute;inset:-40% -10% auto auto;width:700px;height:700px;background:radial-gradient(closest-side,rgba(1,186,237,.28),transparent);pointer-events:none}
