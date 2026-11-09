@@ -128,9 +128,22 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}footer a{text-
 .hero-suite{position:relative;display:flex;justify-content:center;align-items:center;min-height:280px}
 .suite-hero{margin:0;width:100%;max-width:620px;border-radius:20px;box-shadow:0 40px 80px -36px rgba(1,20,52,.55)}
 @media(min-width:1024px){.suite-hero{max-width:100%}}
-.stage-lower{margin-top:56px;min-height:480px}
-.stage-lower .phone.main{width:min(280px,52vw)}
-.stage-lower .phone.side{width:min(220px,40vw)}
-@media(max-width:560px){.stage-lower{min-height:420px}.stage-lower .phone.side{width:38vw}}
+.stage-lower{margin-top:56px;min-height:540px;overflow:visible}
+.stage-lower .phone.main{width:min(280px,52vw);z-index:3;position:relative}
+.stage-lower .phone.side{width:min(264px,48vw);z-index:1;opacity:1}
+/* 20% larger sides (220->264). Centers ~238px from mid so inner corners overlap ~30px behind main */
+.stage-lower .phone.l{left:50%;right:auto;bottom:24px;transform:translateX(calc(-50% - 238px)) rotate(-7deg)}
+.stage-lower .phone.r{left:50%;right:auto;bottom:24px;transform:translateX(calc(-50% + 238px)) rotate(7deg)}
+@media(max-width:900px){
+  .stage-lower{min-height:500px}
+  .stage-lower .phone.l{transform:translateX(calc(-50% - 190px)) rotate(-7deg)}
+  .stage-lower .phone.r{transform:translateX(calc(-50% + 190px)) rotate(7deg)}
+}
+@media(max-width:560px){
+  .stage-lower{min-height:460px}
+  .stage-lower .phone.side{width:min(264px,46vw)}
+  .stage-lower .phone.l{transform:translateX(calc(-50% - 118px)) rotate(-7deg)}
+  .stage-lower .phone.r{transform:translateX(calc(-50% + 118px)) rotate(7deg)}
+}
 
 .num{display:none}
