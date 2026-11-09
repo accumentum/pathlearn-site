@@ -1,0 +1,23 @@
+# PathLearn™
+
+> PathLearn™ is the certification training portal of Accumentum®. Approved Accumentum students use one login for expert-led training modules, hands-on labs and practice quizzes, on the web at training.accumentum.net and in the PathLearn™ iPhone app. Progress syncs between web and iPhone.
+
+PathLearn™ is a product of Accumentum, LLC, Austin, Texas, serving learners across the United States. Access follows Accumentum registration and approval. Downloading the app alone does not create enrollment. PathPass® is a separate Accumentum exam-prep practice bank app.
+
+## Main pages
+- [PathLearn home](https://pathlearn.net/): the official PathLearn™ site. What PathLearn is, what is inside the portal, access, how it works, FAQ
+- [PathLearn on accumentum.net](https://accumentum.net/pathlearn/): short PathLearn summary on the Accumentum site
+
+## Get access
+- [Register for training](https://accumentum.net/registration/)
+- [Training catalog](https://accumentum.net/training/)
+- [Web portal sign in](https://training.accumentum.net/login)
+- [PathLearn on the App Store](https://apps.apple.com/app/id6825093041)
+
+## Related
+- [Accumentum](https://accumentum.net/)
+- [PathPass](https://accumentum.net/pathpass/)
+
+## Contact
+- Accumentum, 12600 Hill Country Blvd Suite 5200, Austin TX 78738
+- info@accumentum.net, 512-640-9850

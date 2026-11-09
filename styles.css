@@ -1,8 +1,10 @@
+@font-face{font-family:"Satoshi Fallback";src:local("Arial"),local("Helvetica"),local("Liberation Sans");size-adjust:98.5%}
+@font-face{font-family:"Newsreader Fallback";src:local("Georgia"),local("Times New Roman");size-adjust:104%}
 @font-face{font-family:"Satoshi";src:url(fonts/Satoshi-Variable.woff2) format("woff2");font-weight:300 900;font-display:swap}
 @font-face{font-family:"Newsreader";src:url(fonts/Newsreader-Variable.woff2) format("woff2");font-weight:200 800;font-display:swap}
 @font-face{font-family:"Newsreader";src:url(fonts/Newsreader-Italic-Variable.woff2) format("woff2");font-weight:200 800;font-style:italic;font-display:swap}
 @font-face{font-family:"Fragment Mono";src:url(fonts/FragmentMono-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
-:root{--navy:#011434;--deep:#031859;--royal:#0158fa;--bright:#0094f8;--cyan:#01baed;--cyan-hi:#01e9fb;--muted:#5a6a85;--surface:#f4f7fb;--canvas:#f7f9fc;--line:rgba(1,20,52,.08);--ease:cubic-bezier(.22,1,.36,1);--sans:"Satoshi",ui-sans-serif,system-ui,sans-serif;--display:"Newsreader",Georgia,serif;--mono:"Fragment Mono",ui-monospace,monospace}
+:root{--navy:#011434;--deep:#031859;--royal:#0158fa;--bright:#0094f8;--cyan:#01baed;--cyan-hi:#01e9fb;--muted:#5a6a85;--surface:#f4f7fb;--canvas:#f7f9fc;--line:rgba(1,20,52,.08);--ease:cubic-bezier(.22,1,.36,1);--sans:"Satoshi","Satoshi Fallback",ui-sans-serif,system-ui,sans-serif;--display:"Newsreader","Newsreader Fallback",Georgia,serif;--mono:"Fragment Mono",ui-monospace,monospace}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--canvas);color:var(--navy);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}a{color:inherit}
@@ -272,3 +274,5 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}footer a{text-
   .stat span{font-size:11.5px}
   .card,.step,.acard{padding:22px}
 }
+/* Clip stray decorative overflow without creating a scroll container. */
+html,body{overflow-x:clip}

@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://pathlearn.net/</loc><lastmod>2026-11-08</lastmod></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url><loc>https://pathlearn.net/</loc><lastmod>2026-11-09</lastmod>
+<image:image><image:loc>https://pathlearn.net/img/pathlearn-iphone-suite-v20261108-1672w.webp</image:loc></image:image>
+<image:image><image:loc>https://pathlearn.net/img/pathlearn-phone-securityplus-course-v20261102b-540w.webp</image:loc></image:image>
+<image:image><image:loc>https://pathlearn.net/img/pathlearn-phone-lab-detail-v20261102-540w.webp</image:loc></image:image>
+<image:image><image:loc>https://pathlearn.net/img/pathlearn-phone-quiz-results-v20261102-360w.webp</image:loc></image:image>
+<image:image><image:loc>https://pathlearn.net/img/pathlearn-ipad-course-progress-v20261102-960w.webp</image:loc></image:image>
+<image:image><image:loc>https://pathlearn.net/img/pathlearn-phone-courses-home-v20261102-540w.webp</image:loc></image:image>
+<image:image><image:loc>https://pathlearn.net/img/og-pathlearn-v20261108.jpg</image:loc></image:image>
+</url></urlset>
