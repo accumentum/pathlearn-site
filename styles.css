@@ -117,7 +117,7 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}footer a{text-
 
 .suite{display:block;margin:56px auto 8px;width:100%;max-width:1180px;height:auto;border-radius:24px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6);object-fit:contain}
 
-.tm{font-size:.35em !important;font-weight:600;line-height:1;vertical-align:super;margin-left:.06em;letter-spacing:0;position:static;top:auto;display:inline}
+.tm{font-size:.28em !important;font-weight:600;line-height:1;vertical-align:super;margin-left:.06em;letter-spacing:0;position:static;top:auto;display:inline}
 .label .tm{font-size:.45em !important;vertical-align:super}
 
 .icn{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;background:rgba(1,88,250,.06);border:1px solid rgba(1,88,250,.12);margin-bottom:22px}
