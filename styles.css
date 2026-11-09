@@ -63,6 +63,9 @@ h2.display{font-size:clamp(32px,4.4vw,52px)}h3{font-size:19px;font-weight:700;le
 }
 @keyframes fade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 /* hero */
+.hero{background:radial-gradient(900px 420px at 15% 10%,rgba(1,186,237,.22),transparent 60%),radial-gradient(700px 380px at 85% 0%,rgba(1,88,250,.28),transparent 55%),linear-gradient(180deg,#dce9ff 0%,#eef4ff 42%,#f7f9fc 100%);padding:128px 0 96px;overflow:visible}
+@media(min-width:1024px){.hero{padding:148px 0 104px}}
+
 padding:128px 0 96px;overflow:visible}
 .hero-grid{display:grid;gap:56px;align-items:center}@media(min-width:1024px){.hero-grid{grid-template-columns:1.05fr 1fr;gap:40px}}
 .hero h1{font-family:var(--display);font-weight:500;font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.03em;margin:18px 0 22px}
