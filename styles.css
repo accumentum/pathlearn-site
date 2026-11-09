@@ -78,7 +78,7 @@ h2.display{font-size:clamp(32px,4.4vw,52px)}h3{font-size:19px;font-weight:700;le
 .media.wide{padding:8px 0}.media.wide img{border-radius:16px;box-shadow:0 30px 60px -30px rgba(1,20,52,.45);width:100%;height:auto}
 .media.tablet{padding:8px 0}.media.tablet img{width:min(420px,100%);height:auto;border-radius:22px;box-shadow:0 30px 60px -30px rgba(1,20,52,.45)}
 /* access */
-.banner{background-color:#071940;background-image:linear-gradient(135deg,#153786 0%,#102e73 45%,#071940 100%);color:#fff;position:relative;overflow:hidden}
+.banner{background-color:#071940;background-image:linear-gradient(135deg,#153786 0%,#102e73 45%,#071940 100%);color:#fff;position:relative;overflow:visible}
 .banner:before{content:"";position:absolute;inset:-40% -10% auto auto;width:700px;height:700px;background:radial-gradient(closest-side,rgba(1,186,237,.28),transparent);pointer-events:none}
 .banner .label{color:var(--cyan-hi)}.banner .lead{color:rgba(255,255,255,.72)}
 .acc{display:grid;gap:18px;position:relative}@media(min-width:860px){.acc{grid-template-columns:1fr 1fr}}
@@ -115,4 +115,4 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}footer a{text-
 .no-js .reveal{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}.sweep{background-position:0 0}}
 
-.suite{display:block;margin:56px auto 0;width:100%;max-width:1180px;height:auto;border-radius:24px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.suite{display:block;margin:56px auto 8px;width:100%;max-width:1180px;height:auto;border-radius:24px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6);object-fit:contain}
