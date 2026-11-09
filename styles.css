@@ -97,12 +97,12 @@ h2.display{font-size:clamp(32px,4.4vw,52px)}h3{font-size:19px;font-weight:700;le
 /* faq */
 .faq{border-top:1px solid var(--line)}
 .q{border-bottom:1px solid var(--line)}
-.q button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 4px;cursor:pointer;font-size:18px;font-weight:600}
+.q button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:24px 4px;cursor:pointer;font-size:18px;font-weight:600;text-align:left}
 .q button:focus-visible{box-shadow:0 0 0 3px rgba(1,88,250,.35);border-radius:10px}
 .q .ic{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid rgba(1,20,52,.12);display:grid;place-items:center;transition:transform 300ms var(--ease),background .2s}
 .q[data-open] .ic{transform:rotate(45deg);background:var(--navy);color:#fff;border-color:var(--navy)}
 .q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows 360ms var(--ease)}.q[data-open] .a{grid-template-rows:1fr}
-.q .a>div{overflow:hidden}.q .a p{margin:0 4px 24px;color:var(--muted);font-size:16px;max-width:700px}
+.q .a>div{overflow:hidden}
 /* cta + footer */
 .final{text-align:center;border-radius:32px;padding:72px 28px;background:radial-gradient(900px 420px at 15% 10%,rgba(1,186,237,.22),transparent 60%),radial-gradient(700px 380px at 85% 0%,rgba(1,88,250,.28),transparent 55%),linear-gradient(180deg,#dce9ff 0%,#eef4ff 60%,#f4f7fb 100%);border:1px solid rgba(120,155,230,.3)}
 .final .lead{margin:16px auto 0}.final .ctas{justify-content:center}
@@ -147,3 +147,10 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}footer a{text-
 }
 
 .num{display:none}
+
+.q-label{flex:1 1 auto;min-width:0;display:inline;line-height:1.35;text-wrap:pretty}
+.q-label .tm{font-size:.28em !important;vertical-align:super}
+.q .ic{margin-top:2px}
+.faq-cta{display:flex;flex-wrap:wrap;gap:10px;margin:4px 4px 28px !important;max-width:none !important}
+.faq-cta .btn{min-height:42px;font-size:13px;padding:.65rem 1.1rem}
+.q .a p{margin:0 4px 14px;color:var(--muted);font-size:16px;max-width:700px;line-height:1.55}
