@@ -97,9 +97,11 @@ h2.display{font-size:clamp(32px,4.4vw,52px)}h3{font-size:19px;font-weight:700;le
 /* hero */
 .hero{background:radial-gradient(900px 420px at 15% 10%,rgba(1,186,237,.22),transparent 60%),radial-gradient(700px 380px at 85% 0%,rgba(1,88,250,.28),transparent 55%),linear-gradient(180deg,#dce9ff 0%,#eef4ff 42%,#f7f9fc 100%);padding:128px 0 96px;overflow:visible}
 @media(min-width:1024px){.hero{padding:148px 0 104px}}
-
-padding:128px 0 96px;overflow:visible}
-.hero-grid{display:grid;gap:56px;align-items:center}@media(min-width:1024px){.hero-grid{grid-template-columns:1.05fr 1fr;gap:40px}}
+.hero-grid{display:grid;gap:40px;align-items:center;grid-template-columns:1fr}
+@media(min-width:900px){.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:36px;align-items:center}}
+@media(min-width:1024px){.hero-grid{gap:48px}}
+.hero-suite{min-width:0;width:100%}
+.hero-suite .suite-hero{width:100%;height:auto;display:block}
 .hero h1{font-family:var(--display);font-weight:500;font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.03em;margin:18px 0 22px}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 8px;border-radius:999px;background:rgba(255,255,255,.7);border:1px solid rgba(1,88,250,.15);font-size:13px;font-weight:600}
 .pill .dot{width:8px;height:8px;border-radius:50%;background:#16b364;box-shadow:0 0 0 4px rgba(22,179,100,.18)}
@@ -182,9 +184,8 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}footer a{text-
 .step .n{display:none}
 .ms-icon{display:block}
 
-.hero-suite{position:relative;display:flex;justify-content:center;align-items:center;min-height:280px}
-.suite-hero{margin:0;width:100%;max-width:620px;border-radius:20px;box-shadow:0 40px 80px -36px rgba(1,20,52,.55)}
-@media(min-width:1024px){.suite-hero{max-width:100%}}
+.hero-suite{position:relative;display:flex;justify-content:center;align-items:center;min-height:0}
+.suite-hero{margin:0;width:100%;max-width:100%;border-radius:20px;box-shadow:0 40px 80px -36px rgba(1,20,52,.55)}
 .stage-lower{margin-top:56px;min-height:540px;overflow:visible}
 .stage-lower .phone.main{width:min(280px,52vw);z-index:3;position:relative}
 .stage-lower .phone.side{width:min(264px,48vw);z-index:1;opacity:1}
